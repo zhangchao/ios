@@ -1,0 +1,6 @@
+framework module Pods_heelo {
+  umbrella header "Pods-heelo-umbrella.h"
+
+  export *
+  module * { export * }
+}

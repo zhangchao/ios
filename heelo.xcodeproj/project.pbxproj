@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2BFC8CAB18D83340B9A99DB /* Pods_heelo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E753D4AAF6082DA9586C2D6 /* Pods_heelo.framework */; };
 		D4737FCB1E291D2E00D639B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4737FCA1E291D2E00D639B3 /* AppDelegate.swift */; };
 		D4737FCD1E291D2E00D639B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4737FCC1E291D2E00D639B3 /* ViewController.swift */; };
 		D4737FD01E291D2E00D639B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4737FCE1E291D2E00D639B3 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E753D4AAF6082DA9586C2D6 /* Pods_heelo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heelo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F4C0AC99E1D2BDF1D45606 /* Pods-heelo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heelo.release.xcconfig"; path = "Pods/Target Support Files/Pods-heelo/Pods-heelo.release.xcconfig"; sourceTree = "<group>"; };
+		BC96E7681212DFCC0659FF86 /* Pods-heelo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heelo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-heelo/Pods-heelo.debug.xcconfig"; sourceTree = "<group>"; };
 		D4737FC71E291D2E00D639B3 /* heelo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = heelo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4737FCA1E291D2E00D639B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4737FCC1E291D2E00D639B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BFC8CAB18D83340B9A99DB /* Pods_heelo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93D33600758D1020DC70EDA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC96E7681212DFCC0659FF86 /* Pods-heelo.debug.xcconfig */,
+				B9F4C0AC99E1D2BDF1D45606 /* Pods-heelo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CDAC9AC9B46D961F9518F997 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E753D4AAF6082DA9586C2D6 /* Pods_heelo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4737FBE1E291D2D00D639B3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				D4737FDE1E291D2E00D639B3 /* heeloTests */,
 				D4737FE91E291D2E00D639B3 /* heeloUITests */,
 				D4737FC81E291D2E00D639B3 /* Products */,
+				93D33600758D1020DC70EDA2 /* Pods */,
+				CDAC9AC9B46D961F9518F997 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4737FEF1E291D2E00D639B3 /* Build configuration list for PBXNativeTarget "heelo" */;
 			buildPhases = (
+				433C159B8210AEE24AF1DFB3 /* [CP] Check Pods Manifest.lock */,
 				D4737FC31E291D2E00D639B3 /* Sources */,
 				D4737FC41E291D2E00D639B3 /* Frameworks */,
 				D4737FC51E291D2E00D639B3 /* Resources */,
+				7890CB8BBB7CCAAFE43E0873 /* [CP] Embed Pods Frameworks */,
+				431BB44AA4A66648C6006851 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		431BB44AA4A66648C6006851 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-heelo/Pods-heelo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		433C159B8210AEE24AF1DFB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7890CB8BBB7CCAAFE43E0873 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-heelo/Pods-heelo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4737FC31E291D2E00D639B3 /* Sources */ = {
@@ -408,6 +483,7 @@
 		};
 		D4737FF01E291D2E00D639B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC96E7681212DFCC0659FF86 /* Pods-heelo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = heelo/Info.plist;
@@ -415,11 +491,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = diancan.heelo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D4737FF11E291D2E00D639B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F4C0AC99E1D2BDF1D45606 /* Pods-heelo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = heelo/Info.plist;
@@ -427,6 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = diancan.heelo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -503,6 +582,7 @@
 				D4737FF11E291D2E00D639B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4737FF21E291D2E00D639B3 /* Build configuration list for PBXNativeTarget "heeloTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +591,7 @@
 				D4737FF41E291D2E00D639B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4737FF51E291D2E00D639B3 /* Build configuration list for PBXNativeTarget "heeloUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +600,7 @@
 				D4737FF71E291D2E00D639B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
